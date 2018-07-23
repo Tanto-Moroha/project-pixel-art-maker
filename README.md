@@ -2,15 +2,33 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+* [General information](#general-information)
+* [History of project](#history-of-project)
+* [Point of start](#point-of-start)
+* [Task](#task)
+* [My goals](#my-goals)
 
-## Instructions
+## General information
 
-To get started, open `designs.js` and start building out the app's functionality.
+Pixel Art Maker is a single-page web app that allows users to draw pixel art on a customizable canvas.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+## History of project
 
-## Contributing
+Pixel Art Maker Project is a part of Udacity's Front End Developer Nanodegree program.
+Check at [Udacity](https://www.udacity.com).
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+## Point of start
+
+I was given starter code, including HTML and CSS, to build the application.
+You can find the starter code at [GitHub](https://github.com/udacity/project-pixel-art-maker-starter).
+
+## Task
+
+My task is to write JavaScript code that lets the user to create a grid of squares representing their design, and apply colors.
+
+## My goals
+
+My main goal is to better understand:
+
+* Accessing the DOM using methods of the document object,
+* Declaring functions and attaching them to DOM objects as event listeners.
