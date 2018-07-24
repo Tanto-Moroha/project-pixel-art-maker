@@ -1,12 +1,32 @@
+/*
+There will be a lot of comments in this file. You may find them unnecessary, but I'm still learning and I find them helpful for me.
+*/
+
 // Select color input
-// Select size input
 
-// When size is submitted by the user, call makeGrid()
+// Grid size
+let gridHeight;
+let gridWidth;
 
+// Get grid size values
+document.querySelector('#sizePicker').addEventListener('submit', function (event) {
+  // Prevent page refreshing
+  event.preventDefault();
+
+  gridHeight = document.querySelector('#inputHeight').value;
+  gridWidth = document.querySelector('#inputWidth').value;
+
+  makeGrid();
+});
+
+// Draw a grid
 function makeGrid() {
   // TODO: Remove test log
   console.log(`Test log: function makeGrid started.`);
 
+  // TODO: Clear previous grid if there is any
+
+  // Draw rows and cells
   for (let row = 1; row <= gridHeight; row++) {
     // Create a new row
     const newRow = document.createElement('tr');
@@ -21,9 +41,3 @@ function makeGrid() {
   }
 
 }
-
-// TODO: Remove test after branch merging
-// Test for a module
-const gridHeight = 10;
-const gridWidth = 5;
-makeGrid();
