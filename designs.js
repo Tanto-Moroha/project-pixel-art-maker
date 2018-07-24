@@ -43,4 +43,14 @@ function makeGrid() {
 
   }
 
+  document.querySelector('#pixelCanvas').addEventListener('click', respondToTheClick);
+
+}
+
+function respondToTheClick (evt) {
+  // TODO: Remove test log
+  console.log('A cell was clicked.');
+  // Change a cell's color
+  // TODO: Link color picker
+  evt.target.style.backgroundColor = 'red';
 }
