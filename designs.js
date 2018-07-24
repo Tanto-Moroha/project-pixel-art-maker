@@ -24,7 +24,10 @@ function makeGrid() {
   // TODO: Remove test log
   console.log(`Test log: function makeGrid started.`);
 
-  // TODO: Clear previous grid if there is any
+  // Remove previous table if there was any
+  while (document.querySelector('#pixelCanvas').firstChild) {
+    document.querySelector('#pixelCanvas').removeChild(document.querySelector('#pixelCanvas').firstChild);
+  }
 
   // Draw rows and cells
   for (let row = 1; row <= gridHeight; row++) {
