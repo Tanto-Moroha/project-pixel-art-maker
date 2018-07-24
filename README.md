@@ -7,6 +7,7 @@
 * [Point of start](#point-of-start)
 * [Task](#task)
 * [My goals](#my-goals)
+* [About code formatting](#about-code-formatting)
 
 ## General information
 
@@ -14,7 +15,7 @@ Pixel Art Maker is a single-page web app that allows users to draw pixel art on 
 
 ## History of project
 
-Pixel Art Maker Project is a part of Udacity's Front End Developer Nanodegree program.
+Pixel Art Maker Project is a part of Udacity Front-End Nanodegree Program (know also as FEND).
 Check at [Udacity](https://www.udacity.com).
 
 ## Point of start
@@ -32,3 +33,7 @@ My main goal is to better understand:
 
 * Accessing the DOM using methods of the document object,
 * Declaring functions and attaching them to DOM objects as event listeners.
+
+## About code formatting
+
+I follow [Udacity Frontend Nanodegree Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide) for HTML, CSS, JavaScript and Git Commit Messages.
