@@ -2,7 +2,8 @@
 There will be a lot of comments in this file. You may find them unnecessary, but I'm still learning and I find them helpful for me.
 */
 
-// Select color input
+// Set a Color Picker
+const colorPicker = document.querySelector('#colorPicker');
 
 // Grid size
 let gridHeight;
@@ -51,6 +52,5 @@ function respondToTheClick (evt) {
   // TODO: Remove test log
   console.log('A cell was clicked.');
   // Change a cell's color
-  // TODO: Link color picker
-  evt.target.style.backgroundColor = 'red';
+  evt.target.style.backgroundColor = colorPicker.value;
 }
