@@ -22,8 +22,6 @@ document.querySelector('#sizePicker').addEventListener('submit', function (event
 
 // Draw a grid
 function makeGrid() {
-  // TODO: Remove test log
-  console.log(`Test log: function makeGrid started.`);
 
   // Remove previous table if there was any
   while (document.querySelector('#pixelCanvas').firstChild) {
@@ -49,8 +47,6 @@ function makeGrid() {
 }
 
 function respondToTheClick (evt) {
-  // TODO: Remove test log
-  console.log('A cell was clicked.');
   // Change a cell's color
   evt.target.style.backgroundColor = colorPicker.value;
 }
