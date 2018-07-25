@@ -13,7 +13,7 @@ let gridWidth;
 
 
 // Get grid size values
-document.querySelector('#sizePicker').addEventListener('submit', function (event) {
+document.querySelector('#sizePicker').addEventListener('submit', function(event) {
   // Prevent page refreshing
   event.preventDefault();
 
@@ -45,7 +45,10 @@ function makeGrid() {
 }
 
 
-function respondToTheClick (evt) {
+function respondToTheClick(evt) {
+  evt.stopPropagation();
   // Change a cell's color
-  evt.target.style.backgroundColor = colorPicker.value;
+  if (evt.target.tagName === 'TD') {
+    evt.target.style.backgroundColor = colorPicker.value;
+  }
 }
