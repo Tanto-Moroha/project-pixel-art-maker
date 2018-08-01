@@ -30,16 +30,17 @@ function makeGrid() {
   while (pixelCanvas.firstChild) {
     pixelCanvas.removeChild(pixelCanvas.firstChild);
   }
+  const fragment = document.createDocumentFragment();
   // Draw rows and cells
   for (let row = 1; row <= gridHeight; row++) {
     const newRow = document.createElement('tr');
-    pixelCanvas.appendChild(newRow);
+    fragment.appendChild(newRow);
 
     for (let col = 1; col <= gridWidth; col++) {
       const newCell = document.createElement('td');
       newRow.appendChild(newCell);
     }
-
+  pixelCanvas.appendChild(fragment);
   }
   pixelCanvas.addEventListener('click', respondToTheClick);
 }
