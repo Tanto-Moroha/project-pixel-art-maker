@@ -1,6 +1,6 @@
-/**
-* There will be a lot of comments in this file. You may find them unnecessary, but I'm still learning and I find them helpful for me.
-*/
+/*
+ * There will be a lot of comments in this file. You may find them unnecessary, but I'm still learning and I find them helpful for me.
+ */
 
 // Set objects to read/manipulate
 const colorPicker = document.querySelector('#colorPicker');
